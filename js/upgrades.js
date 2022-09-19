@@ -5,29 +5,29 @@ var Upgrades;
     Upgrades.AllUpgrades = {
         "juc1": {
             Id: "juc1",
-            Title: "Juicier Toes",
-            Description: "Gives all your toes 60% more juice, giving you +2 more toes per click.",
-            Price: 20,
+            Title: "Hacks for Toes. No Scam",
+            Description: "You're gonna be overpowered after this...",
+            Price: 250,
             Effect: function () {
-                Game.ToesPerClick += 2;
+                Game.ToesPerClick += 100;
             },
             Unlocks: ['juc2', 'bul1']
         },
         'juc2': {
             Id: "juc2",
-            Title: "Tastier Toe Juice",
-            Description: "Gives toe juice extra flavor, giving you +2 more toes per click.",
-            Price: 100,
+            Title: "Download more RAM",
+            Description: "Congrats! You are the first [SUBJECT] the [SOCIETY] will be downloading [VIRUSES] to.",
+            Price: ,
             Effect: function () {
-                Game.ToesPerClick += 2;
+                Game.ToesPerClick += 500;
             },
             Unlocks: []
         },
         'bul1': {
             Id: 'bul1',
-            Title: "Amogus",
-            Description: "Get Harry's Among us figurines to make toes for you. For a price of course.",
-            Price: 100,
+            Title: "Never gonna-",
+            Description: "Not even your hacks will help you here.",
+            Price: 999999999999,
             Effect: function () {
                 Buildings.ShowBuilding('Amogus');
             },
@@ -35,9 +35,9 @@ var Upgrades;
         },
         'bul2': {
             Id: 'bul2',
-            Title: "Spleen Converters",
-            Description: "Get machines to convert donated spleens into toes.",
-            Price: 2000,
+            Title: "-Give you up",
+            Description: "Did you catch it?",
+            Price: 100000,
             Effect: function () {
                 Buildings.ShowBuilding('Spleen Converter');
             },
@@ -98,14 +98,14 @@ RefillInterrogationChance(1);
 $('#cannonInterrogationButton').on('click', function () {
     if (Game.Toes >= Upgrades.CannonInterrogationPrice) {
         if (Upgrades.UpgradePath.length == Object.keys(Upgrades.AllUpgrades).length) {
-            Game.CreateAlert("Cannon has run out of upgrades!");
+            Game.CreateAlert("Cannon is running low on fuel!");
             $('#cannonInterrogation').css('display', 'none');
             return;
         }
         Game.Toes -= Upgrades.CannonInterrogationPrice;
         if (CannonInterrogationChance[CannonInterrogationChance.length - 1] == 1) {
             if (Upgrades.PossibleUpgrades.length == 0) {
-                Game.CreateAlert("Cannon has no available upgrades right now! Buy some of the upgrades you have right now to unlock more.");
+                Game.CreateAlert("**** off");
                 return;
             }
             RefillInterrogationChance(1);
@@ -115,12 +115,13 @@ $('#cannonInterrogationButton').on('click', function () {
         }
         else {
             CannonInterrogationChance.pop();
-            Game.CreateAlert("You interrogated Cannon, but only learned that ".concat(Choose([
-                "khachapuri is important to all aspects of life.",
-                "Cannon's CoC is doing good.",
-                "Cannon is so silly.",
+            Game.CreateAlert("You killed a Cannon, but only learned that ".concat(Choose([
+                "Jambaju Gaming is important to all aspects of life.",
+                "Cannon simps over Harry.",
+                "Cannon is sus.",
                 "Cannon doesn't do drugs (or the 🤓)",
-                "Cannon studies sussy sciences."
+                "Cannon is an orphan."
+                "Cannon is the reason you are an orphan."
             ])));
         }
     }
