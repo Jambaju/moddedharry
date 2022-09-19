@@ -215,26 +215,26 @@ var Game;
         }
         //Inital lore
         if (Game.ToesEarned == 0) {
-            Game.CreateStoryChapter("Prolouge", [
+            Game.CreateStoryChapter("Sub to Jambaju Gaming", [
                 "Harry always struck everyone as a bit odd.",
-                "Maybe it was because of his moaning in class.",
-                "Maybe it was because of his \"Devious ASF Walk\"",
-                "Maybe it was because he dealt cough drops in the back alley after school.",
-                "Or maybe it was his weird obsession with toes.",
-                "Your friends dare you to try and go to Harry's house, in return for a hundred bucks.",
-                "You decide to take the deal, not passing up some easy money.",
-                "You walk over to Harry, and ask if you could come over to his house. Just for a bit, of course.",
-                "He turns with a devious grin. \"Follow me.\" he says"
+                "Maybe it was because of his pet monkey.",
+                "Maybe it was because your mom is so fat…",
+                "Maybe it was because he asked to play Beat Saber at 12 AM on a school night on a Wednesday in the group chat when he knows very well that everyone in that GC has something on Wednesday.",
+                "Or maybe it was his weird obsession with TOES.",
+                "You were in the back rooms and tripped. You wake up in Harry’s house",
+                "You decide to take the deal- oops wrong script…",
+                "\”HEY!! YOU GAVE ME THE WRONG SCRIPT, MAGGOT! BRING THE- oh wait… That’s for the other game?\”",
+                "\”whatever… lets just go to the next scene…\”"
             ], function () {
-                Game.CreateStoryChapter("Harry's Basement", [
+                Game.CreateStoryChapter("Why'd you not sub yet?", [
                     "Without you even asking, Harry takes you to his house.",
                     "Blindfolded of course. You do look sussy after all.",
-                    "When he takes off your blindfold, you find yourself in a dark room, that you can only assume is his basement.",
-                    "\"This is my toe making basement.\" he says in an unusually deep voice. \"You should touch that machine over there.\"",
-                    "You walk over to the machine to observe it more closely, while Harry moans in another corner of the room.",
-                    "The machine is placed on a dark brown desk, with a giant white button hooked to a machine,",
+                    "When he takes off your blindfold, you find yourself in a lit up room, that you can only assume is-",
+                    "\"THIS IS ALSO THE WRONG SCRIPT **** ******* YOU *** FAT STUPID **** ****** **** ***** *****!!!!\”",
+                    "You walk over to the machine to observe it more closely, while Harry cries in- \”ok just ok…\”",
+                    "The machine is a screen that is playing Fortnite Battle Ro- \”That can’t be right\”",
                     "and a glass chamber on the other end.",
-                    "With no other choice you decide to try the machine."
+                    "With no other choice you decide to try his mo- I mean machine."
                 ]);
             });
         }
